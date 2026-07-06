@@ -1,0 +1,7 @@
+# Prevent directory listing
+Options -Indexes
+
+# Protect config files
+<FilesMatch "\.(sql|env|md)$">
+    Require all denied
+</FilesMatch>
